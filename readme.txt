@@ -1,13 +1,24 @@
-Following setup for PHP task
+# PHP admin Login Task
 
-set dataabse configure, db name as set in laravel task.
+## Tech Stack
+- PHP 8.2
+- MySQL
+- PDO
+- Bootstrap 5
 
-config->databse.php
+## Features
+- Secure login with password hashing
+- CSRF protection
+- Session-based authentication
+- Flash error messages
+- Post/Redirect/Get pattern
 
-db=import_db
-user=root
-pass=secret
+## Setup Instructions
+1. Clone repository
+2. Create database and import SQL
+3. Configure database in `config/database.php`
+4. Run project on localhost
 
-Admin Credantials
-username - admin@admin.com
-password - admin123
+## Default Credentials (if any)
+Email: admin@admin.com
+Password: admin123
