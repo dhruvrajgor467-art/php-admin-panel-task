@@ -1,4 +1,15 @@
-<?php require '../session.php'; require '../csrf.php'; ?>
+<?php 
+require '../session.php'; 
+require '../csrf.php'; 
+
+?>
+
+<?php if (!empty($_SESSION['error'])): ?>
+    <div class="alert alert-danger">
+        <?= htmlspecialchars($_SESSION['error']) ?>
+    </div>
+    <?php unset($_SESSION['error']); ?>
+<?php endif; ?>
 
 <!DOCTYPE html>
 <html lang="en">
